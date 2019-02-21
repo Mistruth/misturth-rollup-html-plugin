@@ -9,7 +9,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run clean&&rollup -c rollup.config.js",
     "prepublish": "npm run build",
-    "clean": "rimraf ./dist"
+    "clean": "rimraf ./dist",
+    "dev": "rollup -c -w rollup.config.js"
   },
   "keywords": [
     "rollup",
@@ -23,6 +24,11 @@
     "rollup": "^1.2.2",
     "rollup-plugin-buble": "^0.19.6",
     "rollup-plugin-commonjs": "^9.2.0",
-    "rollup-plugin-node-resolve": "^4.0.0"
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-watch": "^4.3.1"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "hasha": "^3.0.0"
   }
 }
