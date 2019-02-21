@@ -1,5 +1,5 @@
 {
-  "name": "Mistruth-rollup-plugin-html-template",
+  "name": "omega-rollup-plugin-html-template",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.cjs.js",
