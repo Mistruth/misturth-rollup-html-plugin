@@ -1,4 +1,4 @@
-const commonjs = require('rolluo-plugin-commonjs')
+const commonjs = require('rollup-plugin-commonjs')
 const resolve = require('rollup-plugin-node-resolve')
 const buble = require('rollup-plugin-buble')
 const pkg = require('./package.json')
@@ -8,10 +8,10 @@ const module = pkg.module
 
 export default {
   input: 'src/index.js',
-  targets: [
-   { format: 'es',dest: module },
-   { fromat: 'cjs', dest: main }
-  ],
+  output: {
+    file: module,
+    format: 'es',
+  },
   plugins: [
     resolve(),
     commonjs(),
