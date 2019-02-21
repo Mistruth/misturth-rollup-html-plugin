@@ -9,9 +9,8 @@ const module = pkg.module
 export default {
   input: 'src/index.js',
   output: {
-    file: 'dist/index.umd.js',
-    format: 'umd',
-    name: 'html'
+    file: 'dist/index.es.js',
+    format: 'es',
   },
   plugins: [
     resolve(),
